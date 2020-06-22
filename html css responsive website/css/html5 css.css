@@ -1,0 +1,197 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+/*Global styling starts here*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul li{
+    display: inline;
+    padding: 0 20px 0 20px; /* top right bottom left*/
+    list-style: none;
+}
+.button_1{
+  height: 34px;
+  border: 0;
+  background-color: orangered;
+  padding: 0 20px 0 20px ;
+  color: #ffffff;
+  font-weight: bold;
+}
+.dark{
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #35424a;
+}
+/*the header styling starts here*/
+header{
+    background-color: #34524a;
+    border-bottom: 3px solid #e8491d;
+    min-height: 70px;/* this for responsive design when the screen is small the min height will adjus the header height*/
+    padding-top: 30px;
+    color: white;
+    height: 100px;
+}
+header a{
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+header ul{
+    margin: 0;padding: 0;
+}
+
+header .branding{
+    float: left;
+}
+header .branding h1{
+    margin: 0;
+}
+nav{
+   float: right;margin-top: 10px;
+}
+header span , nav .current a{
+    color: orangered;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+/*the show case styling starts here*/
+#showcase{
+    min-height: 400px;
+    background-image: url(../images/notebook-1280538_1920.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+}
+#showcase h1{
+    margin-bottom: 10px;
+    font-size: 55px;
+    margin-top: 100px;
+}
+#showcase p{
+    font-size: 20px;
+}
+
+/*news letter styling starts here */
+#newsletter{
+    background-color: #34524a;
+    padding: 15px;
+}
+#newsletter h1{
+    float: left;
+    color: #fff;
+}
+#newsletter form{
+    float: right;
+    margin-top: 20px;
+}
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+
+/*boxes styling starts here */
+#boxes{
+  margin:18px;
+}
+
+#boxes .box img{
+  width: 85px;
+}
+#boxes .box{
+  width: 28%;
+  float: left;
+  padding: 15px;
+  text-align: center;
+}
+
+
+/*about us page styling is here*/
+
+/*aside_bar styling start here*/
+.aside_bar{
+  float: right;
+  width: 30%;
+}
+
+/*main_col styling stats here*/
+ .main-col{
+  float: left;
+  width: 65%;
+}
+
+
+/*services styling starts here*/
+
+
+
+/*footer styking starts here*/
+footer{
+  margin-top: 10px;
+  text-align: center;
+  background-color: orangered;
+  padding: 10px;
+  color: #fff;
+
+}
+
+
+
+/*adding media query*/
+@media(max-width:871px) {
+      header .branding,
+      header nav ,
+      header li,
+      #newsletter h1,
+      #newsletter form,
+      #boxes .box,
+      .main-col ,
+      .aside_bar
+      {
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+
+      /*adding space botoom to the nav*/
+      header{
+        padding-top: 16px
+      }
+      header a{
+        font-size: 14px;
+      }
+
+      #showcase h1{
+        margin-top: 40px;
+        font-size: 47px;
+      }
+        #newsletter button{
+         margin-top: 12px;
+        }
+
+        #boxes .box{
+         margin-left: -12px
+        }
+}
+
+
+@media(min-width:871px){
+
+}
